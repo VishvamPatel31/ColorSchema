@@ -113,7 +113,7 @@ padding: 0;
 box-sizing: border-box;
 }
 
-body{
+.body{
     background-color: #b1c7e5;
 }
 
@@ -134,7 +134,7 @@ body{
     display: flex;
 }
 
-#header{
+.header{
     background-color: white;
     display: flex;
     flex-basis: 100%;
@@ -181,6 +181,7 @@ body{
     width: 100px;
     height: 42px;
     font-size: 12px;
+    cursor: pointer;
 }
 
 /* --------------------Color Section ---------------- */
@@ -188,7 +189,7 @@ body{
 .colorsgrid{
     background-color: white;
     border-radius: 5px;
-    height: 625px;
+    height: 450px;
     margin: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -207,8 +208,18 @@ body{
     font-size: 20px;
 }
 
+#color1, #color2, #color3, #color4, #color5{
+    border:none;
+    cursor: pointer;
+}
+
+#color1:hover, #color2:hover, #color3:hover, #color4:hover, #color5:hover{
+    margin: 5px;
+}
+
 #color1{
     background-color: black;
+
 }
 
 #color2{
@@ -229,13 +240,12 @@ body{
 
 /* -------------------- Footer ---------------- */
 
-footer{
+.footer{
     height: 3.5rem;
     width: 100%;
     display: flex;
     background-color: white;
     bottom: 0;
-    position: absolute;
     justify-content: center;
     align-items: center;
 }
@@ -263,7 +273,7 @@ footer{
     .colorsgrid{
         background-color: white;
         border-radius: 5px;
-        height: 625px;
+        height: 515px;
         margin: 15px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -293,3 +303,29 @@ footer{
     }
 }
 
+/* --------------------Dark Theme Section ---------------- */
+
+.headerdark{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footerdark{
+    height: 3.8rem;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    color: white;
+    margin-bottom: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.bodydark{
+    background-color: #183153;
+}
